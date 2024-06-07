@@ -10,40 +10,27 @@
     <style>
         body {
             font-family: 'Overpass Mono', monospace;
-            font-size: 16px;
-            /* font-family: 'Playfair Display', serif; */
-            padding-left: 22.5px;
-            padding-right: 22.5px;
-            /* margin-top: 0px; */
+            padding: 0 22.5px;
+            width: 80%;
+            margin: 0 auto;
+            min-width: 300px;
         }
 
         #heading {
-            /* font-size: 0.9rem; */
-            border-width: 1px;
-            border-bottom: 1px solid #000;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-
-        #title {
-            margin: 0px;
-            margin-bottom: 8px;
-            line-height: 1.2;
-            margin-top: 0;
-            margin-bottom: .35rem;
+            border: solid #000;
+            border-width: 0 0 1px 0;
+            line-height: 0.7;
         }
 
         table {
             border-collapse: collapse;
-            width: 100%;
-            max-width: 800px;
+            width: 80%;
             margin: 0 auto;
             font-size: 1rem;
             line-height: 1rem;
             text-align: left;
+            overflow-x: auto;
         }
-
 
         td {
             padding: 0.5rem;
@@ -78,57 +65,57 @@
 
 <body>
     <div id="heading">
-        <h4 id="title">Compare Text to Speech APIs -- IN ALPHA. THIS SITE CURRENLY CONTAINS INCOMPLETE INFORMATION</h4>
-        <!-- <p><strong>Compare Text to Speech APIs</strong></p> -->
+        <p><strong>Compare Text to Speech APIs (alpha)</strong>
+            <i><a href="/about">about</a></i>
     </div>
-    <p>Compare text to speech apis across the web & listen to their audio samples.</p>
-    <p>This is not a complete list and may not represent current offerings. This page was last updated on 9/12/2023.</p>
-    <div style="overflow-x:auto;">
-        <table>
-            <thead>
-                <tr>
-                    <th>Service</th>
-                    <th>Link</th>
-                    <th>Pricing</th>
-                    <th>Audio Samples</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>AWS Polly</td>
-                    <td><a href="https://aws.amazon.com/polly/">Link</a></td>
-                    <td>25</td>
-                    <td><select id="aws" name="aws-dropdown">
+    <p>Compare text to speech apis across the web & listen to their audio samples.<br>
+        <small>This is not a complete list and may not represent current offerings. This page was last updated on
+            2024/06/06.</small>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Link</th>
+                <th>Pricing</th>
+                <th>Audio Samples</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AWS Polly</td>
+                <td><a href="https://aws.amazon.com/polly/">Link</a></td>
+                <td>25</td>
+                <td><select id="aws" name="aws-dropdown">
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
                     </select></td>
-                </tr>
-                <tr>
-                    <td>Azure Text to Speech</td>
-                    <td><a href="https://azure.microsoft.com/en-us/products/ai-services/text-to-speech">Link</a></td>
-                    <td>30</td>
-                    <td><select id="azure" name="azure-dropdown">
+            </tr>
+            <tr>
+                <td>Azure Text to Speech</td>
+                <td><a href="https://azure.microsoft.com/en-us/products/ai-services/text-to-speech">Link</a></td>
+                <td>30</td>
+                <td><select id="azure" name="azure-dropdown">
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
                     </select></td>
-                </tr>
-                <tr>
-                    <td>Google Cloud</td>
-                    <td><a href="https://cloud.google.com/text-to-speech">Link</a></td>
-                    <td>40</td>
-                    <td>
-                        <select id="gcp" name="gcp-dropdown">
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+            </tr>
+            <tr>
+                <td>Google Cloud</td>
+                <td><a href="https://cloud.google.com/text-to-speech">Link</a></td>
+                <td>40</td>
+                <td>
+                    <select id="gcp" name="gcp-dropdown">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
